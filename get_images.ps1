@@ -71,8 +71,8 @@ function Download-Image {
 Get-Dotenv
 
 # Retrieve the variables
-$uriList = "https://api.bytescale.com/v2/accounts/W142iob/folders/list?folderPath=/uploads"
-$auth = [System.Environment]::GetEnvironmentVariable('READAUTH')
+$uriList = "https://api.bytescale.com/v2/accounts/W142iob/folders/list?folderPath=/uploads/raw/uploads/2024/10/03/"
+$auth = [System.Environment]::GetEnvironmentVariable('AUTH')
 
 # Retrieve the list of uploaded files
 $response = Invoke-RestMethod -Uri $uriList -Method Get -Headers @{
