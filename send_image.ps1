@@ -33,8 +33,8 @@ function Select-FileDialog {
 Get-Dotenv
 
 # Retrieve the variables
-$uri = [System.Environment]::GetEnvironmentVariable('URI')
-$auth = [System.Environment]::GetEnvironmentVariable('AUTH')
+$uri = [System.Environment]::GetEnvironmentVariable('SENDURI')
+$auth = [System.Environment]::GetEnvironmentVariable('SENDAUTH')
 
 # Check if imagePath is provided, if not, open file dialog
 if (-not $imagePath) {
